@@ -1,7 +1,13 @@
 #include <iostream>
-#include <math.h>
+
+#include "RandomGenerator.h"
+#include "LCGenerator.h"
+#include "MersenneTwister.h"
 
 int main() {
-	std::cout << "SVN Test" << std::endl;
+
+	RandomGenerator* pRG = new MersenneTwister();
+	for(int i=0;i<20;i++) { std::cout << pRG->Nextdouble() << std::endl; }
+
 	return 0;
 }
