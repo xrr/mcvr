@@ -1,4 +1,12 @@
 #summary Sources of information used for the project
 
+= Monte Carlo, Important Sampling =
+[http://en.wikipedia.org/wiki/Importance_sampling Wikipedia (Importance sampling)]
+[http://en.wikipedia.org/wiki/Monte_Carlo_method Wikipedia (Monte Carlo method)]
+[http://www.cs.fsu.edu/~mascagni/Advanced_Monte_Carlo_Methods.html ETH Zürich course]
+[http://sites.google.com/site/ensaesimulation/cours-de-simulation-de-l-ensae ENSAE ParisTech course]
+
 = Random Numbers Generation =
 [http://www-personal.umich.edu/~wagnerr/MersenneTwister.html Mersenne Twister (Wagner's C++ implementation)]
+
+= C++ =
