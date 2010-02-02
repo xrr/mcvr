@@ -162,7 +162,19 @@
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
 			<File
+				RelativePath=".\LCGenerator.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\mcvr.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\MersenneTwister.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\RandomGenerator.cpp"
 				>
 			</File>
 		</Filter>
@@ -171,6 +183,18 @@
 			Filter="h;hpp;hxx;hm;inl;inc;xsd"
 			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
 			>
+			<File
+				RelativePath=".\LCGenerator.h"
+				>
+			</File>
+			<File
+				RelativePath=".\MersenneTwister.h"
+				>
+			</File>
+			<File
+				RelativePath=".\RandomGenerator.h"
+				>
+			</File>
 		</Filter>
 		<Filter
 			Name="Fichiers de ressources"
