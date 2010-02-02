@@ -7,6 +7,6 @@
  * [http://sites.google.com/site/ensaesimulation/cours-de-simulation-de-l-ensae ENSAE ParisTech course]
 
 = Random Numbers Generation =
- *[http://www-personal.umich.edu/~wagnerr/MersenneTwister.html Mersenne Twister C++ implementation]
+ * [http://www-personal.umich.edu/~wagnerr/MersenneTwister.html Test ]Mersenne Twister C++ implementation]
 
 = C++ =
