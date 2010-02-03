@@ -57,6 +57,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
+				AdditionalDependencies="gsl.lib libmgl.dll.a"
 				GenerateDebugInformation="true"
 				TargetMachine="1"
 			/>
@@ -162,6 +163,10 @@
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
 			<File
+				RelativePath=".\Density.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\LCGenerator.cpp"
 				>
 			</File>
@@ -174,7 +179,15 @@
 				>
 			</File>
 			<File
+				RelativePath=".\Monte_Carlo.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\RandomGenerator.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Range.cpp"
 				>
 			</File>
 		</Filter>
@@ -184,6 +197,10 @@
 			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
 			>
 			<File
+				RelativePath=".\Density.h"
+				>
+			</File>
+			<File
 				RelativePath=".\LCGenerator.h"
 				>
 			</File>
@@ -192,7 +209,15 @@
 				>
 			</File>
 			<File
+				RelativePath=".\Monte_Carlo.h"
+				>
+			</File>
+			<File
 				RelativePath=".\RandomGenerator.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Range.h"
 				>
 			</File>
 		</Filter>
