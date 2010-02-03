@@ -1,6 +1,6 @@
 #pragma once
 #include "RandomGenerator.h"
-#include "Mersenne-1.1/MersenneTwisterSource.h"
+#include "MersenneTwisterSource.h"
 
 
 class MersenneTwister :	public RandomGenerator
