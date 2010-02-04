@@ -1,1 +1,0 @@
-typedef double (* density)(double x, void * params);
