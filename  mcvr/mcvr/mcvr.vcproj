@@ -57,7 +57,6 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="gsl.lib libmgl.dll.a"
 				GenerateDebugInformation="true"
 				TargetMachine="1"
 			/>
@@ -163,10 +162,6 @@
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
 			<File
-				RelativePath=".\Density.cpp"
-				>
-			</File>
-			<File
 				RelativePath=".\LCGenerator.cpp"
 				>
 			</File>
@@ -175,11 +170,7 @@
 				>
 			</File>
 			<File
-				RelativePath=".\MersenneTwister.cpp"
-				>
-			</File>
-			<File
-				RelativePath=".\Monte_Carlo.cpp"
+				RelativePath=".\MTGenerator.cpp"
 				>
 			</File>
 			<File
@@ -197,7 +188,11 @@
 			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
 			>
 			<File
-				RelativePath=".\Density.h"
+				RelativePath=".\FunctorOps.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Functors.h"
 				>
 			</File>
 			<File
@@ -205,11 +200,15 @@
 				>
 			</File>
 			<File
-				RelativePath=".\MersenneTwister.h"
+				RelativePath=".\MersenneTwisterSource.h"
 				>
 			</File>
 			<File
-				RelativePath=".\Monte_Carlo.h"
+				RelativePath=".\MonteCarlo.h"
+				>
+			</File>
+			<File
+				RelativePath=".\MTGenerator.h"
 				>
 			</File>
 			<File
