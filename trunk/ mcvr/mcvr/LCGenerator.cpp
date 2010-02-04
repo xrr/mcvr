@@ -5,7 +5,7 @@ LCGenerator::LCGenerator(long x, long a, long c, long m):
 
 LCGenerator::~LCGenerator(void) {}
 
-double LCGenerator::Nextdouble(void) {
+double LCGenerator::Next(void) {
 	_x = ((_a*_x)+_c)%_m;
 	return (double) _x/(_m-1);
 }

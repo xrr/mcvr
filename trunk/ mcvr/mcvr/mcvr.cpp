@@ -1,31 +1,37 @@
-#include <iostream>
-#include <vector>
-
 #include "Range.h"
-#include "Density.h"
-//#include "RandomGenerator.h"
-//#include "LCGenerator.h"
-//#include "MersenneTwister.h"
+#include "MonteCarlo.h"
+#include "Functors.h"
+#include "FunctorOps.h"
 
 #include <gsl/gsl_math.h>
 
-template <class Functor> 
-double doubleoperation(Functor f, double d) {return f(f(d));}
+#include <iostream>
+#include <vector>
+
+
+
 
 int main() {
-	/*
-	RandomGenerator* pRG = new MersenneTwister();
-	for(int i=0;i<20;i++) { std::cout << pRG->Nextdouble() << std::endl;
-	*/
 
+	Range r (-4,5);
 
-	class D1Functor {
-	public: double operator()(double d) {return(-2*d);}
-	};
+	FunctorD1 pdf1;
+	MonteCarlo<FunctorD1> mc1 (pdf1,r);
+
+	std::cout << "D1(D1(3)): " << apply2x(pdf1, 3) << std::endl;
+	std::cout << mc1.GetRange() << std::endl;
 	
-	D1Functor d1;
 
-	std::cout <<  doubleoperation(d1, 3) << std::endl;
+	FunctorGauss pdfgauss (2,3);
+	MonteCarlo<FunctorGauss> mcgauss (pdfgauss,r);
 
+	std::cout << "Result before Sim: " << mcgauss.GetResult() << std::endl;
+	mcgauss.RunSim(1000);
+	std::cout << "Resultat after Sim: " << mcgauss.GetResult() << std::endl;
+	
+	std::cout << "N(2,3)(2): " << apply(pdfgauss,2) << std::endl;
+
+	system("pause");
 	return 0;
+
 }
