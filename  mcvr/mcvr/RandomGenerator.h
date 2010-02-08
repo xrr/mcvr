@@ -4,5 +4,5 @@ class RandomGenerator {
 public:
 	RandomGenerator(void);
 	~RandomGenerator(void);
-	virtual double Next()=0;
+	virtual double Next(void)=0;
 };

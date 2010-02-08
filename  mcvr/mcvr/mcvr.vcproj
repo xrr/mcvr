@@ -40,6 +40,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
+				PreprocessorDefinitions="_CRT_SECURE_NO_WARNINGS"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="3"
@@ -57,6 +58,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
+				AdditionalDependencies="gsl.lib"
 				GenerateDebugInformation="true"
 				TargetMachine="1"
 			/>
@@ -162,6 +164,14 @@
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
 			<File
+				RelativePath=".\BlackScholes.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Call.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\LCGenerator.cpp"
 				>
 			</File>
@@ -170,7 +180,19 @@
 				>
 			</File>
 			<File
+				RelativePath=".\MonteCarlo.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\MTGenerator.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\NormalGenerator.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Payoff.cpp"
 				>
 			</File>
 			<File
@@ -188,11 +210,11 @@
 			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
 			>
 			<File
-				RelativePath=".\FunctorOps.h"
+				RelativePath=".\BlackScholes.h"
 				>
 			</File>
 			<File
-				RelativePath=".\Functors.h"
+				RelativePath=".\Call.h"
 				>
 			</File>
 			<File
@@ -209,6 +231,14 @@
 			</File>
 			<File
 				RelativePath=".\MTGenerator.h"
+				>
+			</File>
+			<File
+				RelativePath=".\NormalGenerator.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Payoff.h"
 				>
 			</File>
 			<File
