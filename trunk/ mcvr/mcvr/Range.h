@@ -4,15 +4,22 @@
 class Range
 {
 public:
-	Range(double=0, double=1);
-	~Range(void);
-	
 	double lbound;
 	double ubound;
+	int steps;
+	
+	
+	Range(double=0, double=1, int=11);
+	~Range(void);
 
-	double* GetBounds(void);
-	double GetLength(void);
+	double Length(void);
+	double StepSize(void);
+	double* Bounds(void);
+		
+	//Can be iterated:
+	double current; 
+	double Next(void);
+
+	//To simplify output...:
 	friend std::ostream& operator<< (std::ostream&, Range&);
-
 };
-
