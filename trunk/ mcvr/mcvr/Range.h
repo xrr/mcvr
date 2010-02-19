@@ -9,7 +9,7 @@ public:
 	int steps;
 	
 	
-	Range(double=0, double=1, int=11);
+	Range(double=0, double=500, int=5000);
 	~Range(void);
 
 	double Length(void);
@@ -19,6 +19,7 @@ public:
 	//Can be iterated:
 	double current; 
 	double Next(void);
+	void Reset(void);
 
 	//To simplify output...:
 	friend std::ostream& operator<< (std::ostream&, Range&);

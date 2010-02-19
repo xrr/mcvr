@@ -1,29 +1,23 @@
 #include "MonteCarlo.h"
-#include <iostream>
-#include <gsl/gsl_vector.h>
-#include <gsl/gsl_matrix.h>
+#include "Sample.h"
 
-MonteCarlo::MonteCarlo(BlackScholes* pBS, Range* pR, Payoff* pP) : _pBS(pBS), _pR(pR), _pP(pP) {}
+MonteCarlo::MonteCarlo(Range* pR, BlackScholes* pBS, Payoff* pP)
+: _pR(pR), _pBS(pBS), _pP(pP) {}
+
 MonteCarlo::~MonteCarlo(void) {}
 
-double MonteCarlo::Run(int N) {
+double MonteCarlo::Run(unsigned N) {
+	//nombre d'étapes sur une simulation de trajectoire:
 	int S = _pR->steps;
-	gsl_matrix* pM = gsl_matrix_alloc(N,S);
-	for (int n=0; n<N; n++) {
-		/*for (int s=0; s<S; s++) {
-		double t=_pR->Next();
-		gsl_matrix_set(pM,n,s,);
-		}*/
-		int s=S;
-		double T = _pR->ubound;
-		gsl_matrix_set(pM,n,s,_pBS->ClosedFormula(T));
+	double dt = _pR->StepSize();
+	Sample sample(N);
+	for (unsigned n=0; n<N; n++) {
+		Trajectory T(unsigned(S+1));
+		T.Set(1,_pBS->S0);
+		_pBS->Reset();
+		for (int s=1; s<=S; s++)
+			T.Set(s,_pBS->NextValue(dt));
+		sample.Set(n,(*_pP)(&T));
 	}
-	
-	double result = 0;
-	for (int n=0; n<N; n++) {
-		gsl_vector_view rowview = gsl_matrix_row(pM,n); //Extraction de la ligne n
-		gsl_vector* Trajectory = &rowview.vector; //Conversion gsl_vector_view -> gsl_vector*
-		result+=(*_pP)(Trajectory); // moyenne des payoffs
-	}
-	return (result/N);
+	return sample.Mean();
 }

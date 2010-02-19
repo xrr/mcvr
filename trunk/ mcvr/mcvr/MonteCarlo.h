@@ -1,16 +1,20 @@
 #pragma once
-#include "BlackScholes.h"
 #include "Range.h"
+#include "BlackScholes.h"
+#include "BlackScholesSDE.h"
 #include "Payoff.h"
-#include "Call.h"
+#include "ParisianCall.h"
 
 class MonteCarlo
 {
-	BlackScholes* _pBS;
+protected:
 	Range* _pR;
+	BlackScholes* _pBS;
 	Payoff* _pP;
 public:
-	MonteCarlo(BlackScholes* = new BlackScholes(), Range* = new Range(), Payoff* = new Call());
+	MonteCarlo(Range* = new Range(),
+		BlackScholes* = new BlackScholesSDE(),
+		Payoff* = new ParisianCall());
 	~MonteCarlo(void);
-	double Run(int=1);
+	virtual double Run(unsigned=1);
 };
