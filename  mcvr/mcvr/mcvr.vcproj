@@ -168,11 +168,39 @@
 				>
 			</File>
 			<File
+				RelativePath=".\BlackScholesSDE.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\BoxMullerGenerator.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\Call.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\LCGenerator.cpp"
+				RelativePath=".\DegeneratedTrajectory.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\GaussianGenerator.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\GSLGaussianGenerator.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\LinearCongruentialGenerator.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Lognormal.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\MarsagliaGenerator.cpp"
 				>
 			</File>
 			<File
@@ -180,29 +208,75 @@
 				>
 			</File>
 			<File
+				RelativePath=".\MersenneTwisterGenerator.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\MonteCarlo.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\MTGenerator.cpp"
+				RelativePath=".\ParasianCall.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\NormalGenerator.cpp"
+				RelativePath=".\ParasianPut.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\Payoff.cpp"
+				RelativePath=".\ParisianCall.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\RandomGenerator.cpp"
+				RelativePath=".\ParisianPut.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\PathIndependantPayoff.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Pipe.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Put.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\QuickMonteCarlo.cpp"
 				>
 			</File>
 			<File
 				RelativePath=".\Range.cpp"
 				>
 			</File>
+			<File
+				RelativePath=".\Sample.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Tools.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Trajectory.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\UnitTests.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\V.cpp"
+				>
+			</File>
+		</Filter>
+		<Filter
+			Name="Fichiers de ressources"
+			Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav"
+			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}"
+			>
 		</Filter>
 		<Filter
 			Name="Fichiers d&apos;en-tête"
@@ -214,11 +288,43 @@
 				>
 			</File>
 			<File
+				RelativePath=".\BlackScholesSDE.h"
+				>
+			</File>
+			<File
+				RelativePath=".\BoxMullerGenerator.h"
+				>
+			</File>
+			<File
 				RelativePath=".\Call.h"
 				>
 			</File>
 			<File
-				RelativePath=".\LCGenerator.h"
+				RelativePath=".\DegeneratedTrajectory.h"
+				>
+			</File>
+			<File
+				RelativePath=".\GaussianGenerator.h"
+				>
+			</File>
+			<File
+				RelativePath=".\GSLGaussianGenerator.h"
+				>
+			</File>
+			<File
+				RelativePath=".\LinearCongruentialGenerator.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Lognormal.h"
+				>
+			</File>
+			<File
+				RelativePath=".\MarsagliaGenerator.h"
+				>
+			</File>
+			<File
+				RelativePath=".\MersenneTwisterGenerator.h"
 				>
 			</File>
 			<File
@@ -230,15 +336,39 @@
 				>
 			</File>
 			<File
-				RelativePath=".\MTGenerator.h"
+				RelativePath=".\ParasianCall.h"
 				>
 			</File>
 			<File
-				RelativePath=".\NormalGenerator.h"
+				RelativePath=".\ParasianPut.h"
+				>
+			</File>
+			<File
+				RelativePath=".\ParisianCall.h"
+				>
+			</File>
+			<File
+				RelativePath=".\ParisianPut.h"
+				>
+			</File>
+			<File
+				RelativePath=".\PathIndependantPayoff.h"
 				>
 			</File>
 			<File
 				RelativePath=".\Payoff.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Pipe.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Put.h"
+				>
+			</File>
+			<File
+				RelativePath=".\QuickMonteCarlo.h"
 				>
 			</File>
 			<File
@@ -249,12 +379,30 @@
 				RelativePath=".\Range.h"
 				>
 			</File>
-		</Filter>
-		<Filter
-			Name="Fichiers de ressources"
-			Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav"
-			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}"
-			>
+			<File
+				RelativePath=".\Sample.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Tools.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Trajectory.h"
+				>
+			</File>
+			<File
+				RelativePath=".\UniformGenerator.h"
+				>
+			</File>
+			<File
+				RelativePath=".\UnitTests.h"
+				>
+			</File>
+			<File
+				RelativePath=".\V.h"
+				>
+			</File>
 		</Filter>
 	</Files>
 	<Globals>
