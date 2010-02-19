@@ -1,1 +1,0 @@
-hist(read.csv("w:/bureau/test.csv", header=FALSE, dec="."))
