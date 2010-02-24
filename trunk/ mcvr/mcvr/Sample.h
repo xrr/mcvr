@@ -9,5 +9,7 @@ public:
 	Sample(unsigned);
 	~Sample(void);
 	double Mean(void);
+	double MeanSq(void);
 	double Variance(void);
+	double VarianceCorrected(void);
 };

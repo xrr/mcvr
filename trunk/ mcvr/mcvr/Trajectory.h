@@ -8,5 +8,4 @@ class Trajectory :
 public:
 	Trajectory(unsigned);
 	~Trajectory(void);
-	explicit operator DegeneratedTrajectory();
 };

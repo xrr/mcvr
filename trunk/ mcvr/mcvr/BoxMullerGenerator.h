@@ -7,6 +7,7 @@ class BoxMullerGenerator :
 {
 	bool _cached;
 	double _cache;
+	void Init(void);
 public:
 	BoxMullerGenerator(void);
 	BoxMullerGenerator(UniformGenerator*);

@@ -1,5 +1,6 @@
 #include "MonteCarlo.h"
 #include "Sample.h"
+#include <iostream>
 
 MonteCarlo::MonteCarlo(Range* pR, BlackScholes* pBS, Payoff* pP)
 : _pR(pR), _pBS(pBS), _pP(pP) {}
@@ -7,7 +8,6 @@ MonteCarlo::MonteCarlo(Range* pR, BlackScholes* pBS, Payoff* pP)
 MonteCarlo::~MonteCarlo(void) {}
 
 double MonteCarlo::Run(unsigned N) {
-	//nombre d'étapes sur une simulation de trajectoire:
 	int S = _pR->steps;
 	double dt = _pR->StepSize();
 	Sample sample(N);
@@ -19,5 +19,8 @@ double MonteCarlo::Run(unsigned N) {
 			T.Set(s,_pBS->NextValue(dt));
 		sample.Set(n,(*_pP)(&T));
 	}
+
+	std::cout << "Mean: " << sample.Mean() << std::endl;
+	std::cout << "Variance: " << sample.Variance() << std::endl;
 	return sample.Mean();
 }
