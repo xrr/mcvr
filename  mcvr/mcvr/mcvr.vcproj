@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9,00"
 	Name="mcvr"
-	ProjectGUID="{BF233FC7-2034-4851-82CE-8F955FFA70D0}"
+	ProjectGUID="{E7E106A4-AE9A-4615-BCEA-BF8C2B724854}"
 	RootNamespace="mcvr"
 	TargetFrameworkVersion="196613"
 	>
@@ -58,7 +58,6 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="gsl.lib"
 				GenerateDebugInformation="true"
 				TargetMachine="1"
 			/>
@@ -111,6 +110,7 @@
 				Name="VCCLCompilerTool"
 				Optimization="2"
 				EnableIntrinsicFunctions="true"
+				PreprocessorDefinitions="_CRT_SECURE_NO_WARNINGS"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
 				WarningLevel="3"
@@ -164,111 +164,245 @@
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
 			<File
-				RelativePath=".\BlackScholes.cpp"
+				RelativePath="BlackScholes.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\BlackScholesSDE.cpp"
+				RelativePath="BlackScholesSDE.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\BoxMullerGenerator.cpp"
+				RelativePath="BoxMullerGenerator.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\Call.cpp"
+				RelativePath="Call.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\DegeneratedTrajectory.cpp"
+				RelativePath="Chrono.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\GaussianGenerator.cpp"
+				RelativePath="DegeneratedTrajectory.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\GSLGaussianGenerator.cpp"
+				RelativePath="GaussianGenerator.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\LinearCongruentialGenerator.cpp"
+				RelativePath="LinearCongruentialGenerator.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\Lognormal.cpp"
+				RelativePath="Lognormal.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\MarsagliaGenerator.cpp"
+				RelativePath="LookbackCall.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\mcvr.cpp"
+				RelativePath="LookbackPut.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\MersenneTwisterGenerator.cpp"
+				RelativePath="MarsagliaGenerator.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\MonteCarlo.cpp"
+				RelativePath="mcvr.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\ParasianCall.cpp"
+				RelativePath="MersenneTwisterGenerator.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\ParasianPut.cpp"
+				RelativePath="MonteCarlo.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\ParisianCall.cpp"
+				RelativePath="ParasianCall.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\ParisianPut.cpp"
+				RelativePath="ParasianPut.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\PathIndependantPayoff.cpp"
+				RelativePath="ParisianCall.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\Pipe.cpp"
+				RelativePath="ParisianPut.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\Put.cpp"
+				RelativePath="PathIndependantPayoff.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\QuickMonteCarlo.cpp"
+				RelativePath="Pipe.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\Range.cpp"
+				RelativePath="Put.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\Sample.cpp"
+				RelativePath="QuickMonteCarlo.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\Tools.cpp"
+				RelativePath="Range.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\Trajectory.cpp"
+				RelativePath="Sample.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\UnitTests.cpp"
+				RelativePath="Tests.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\V.cpp"
+				RelativePath="Trajectory.cpp"
+				>
+			</File>
+			<File
+				RelativePath="V.cpp"
+				>
+			</File>
+		</Filter>
+		<Filter
+			Name="Fichiers d&apos;en-tête"
+			Filter="h;hpp;hxx;hm;inl;inc;xsd"
+			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
+			>
+			<File
+				RelativePath="BlackScholes.h"
+				>
+			</File>
+			<File
+				RelativePath="BlackScholesSDE.h"
+				>
+			</File>
+			<File
+				RelativePath="BoxMullerGenerator.h"
+				>
+			</File>
+			<File
+				RelativePath="Call.h"
+				>
+			</File>
+			<File
+				RelativePath="Chrono.h"
+				>
+			</File>
+			<File
+				RelativePath="DegeneratedTrajectory.h"
+				>
+			</File>
+			<File
+				RelativePath="GaussianGenerator.h"
+				>
+			</File>
+			<File
+				RelativePath="LinearCongruentialGenerator.h"
+				>
+			</File>
+			<File
+				RelativePath="Lognormal.h"
+				>
+			</File>
+			<File
+				RelativePath="LookbackCall.h"
+				>
+			</File>
+			<File
+				RelativePath="LookbackPut.h"
+				>
+			</File>
+			<File
+				RelativePath="MarsagliaGenerator.h"
+				>
+			</File>
+			<File
+				RelativePath="MersenneTwisterGenerator.h"
+				>
+			</File>
+			<File
+				RelativePath="MersenneTwisterSource.h"
+				>
+			</File>
+			<File
+				RelativePath="MonteCarlo.h"
+				>
+			</File>
+			<File
+				RelativePath="ParasianCall.h"
+				>
+			</File>
+			<File
+				RelativePath="ParasianPut.h"
+				>
+			</File>
+			<File
+				RelativePath="ParisianCall.h"
+				>
+			</File>
+			<File
+				RelativePath="ParisianPut.h"
+				>
+			</File>
+			<File
+				RelativePath="PathIndependantPayoff.h"
+				>
+			</File>
+			<File
+				RelativePath="Payoff.h"
+				>
+			</File>
+			<File
+				RelativePath="Pipe.h"
+				>
+			</File>
+			<File
+				RelativePath="Put.h"
+				>
+			</File>
+			<File
+				RelativePath="QuickMonteCarlo.h"
+				>
+			</File>
+			<File
+				RelativePath="RandomGenerator.h"
+				>
+			</File>
+			<File
+				RelativePath="Range.h"
+				>
+			</File>
+			<File
+				RelativePath="Sample.h"
+				>
+			</File>
+			<File
+				RelativePath="Tests.h"
+				>
+			</File>
+			<File
+				RelativePath="Trajectory.h"
+				>
+			</File>
+			<File
+				RelativePath="UniformGenerator.h"
+				>
+			</File>
+			<File
+				RelativePath="V.h"
 				>
 			</File>
 		</Filter>
@@ -278,132 +412,10 @@
 			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}"
 			>
 		</Filter>
-		<Filter
-			Name="Fichiers d&apos;en-tête"
-			Filter="h;hpp;hxx;hm;inl;inc;xsd"
-			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
+		<File
+			RelativePath="mcvr.cd"
 			>
-			<File
-				RelativePath=".\BlackScholes.h"
-				>
-			</File>
-			<File
-				RelativePath=".\BlackScholesSDE.h"
-				>
-			</File>
-			<File
-				RelativePath=".\BoxMullerGenerator.h"
-				>
-			</File>
-			<File
-				RelativePath=".\Call.h"
-				>
-			</File>
-			<File
-				RelativePath=".\DegeneratedTrajectory.h"
-				>
-			</File>
-			<File
-				RelativePath=".\GaussianGenerator.h"
-				>
-			</File>
-			<File
-				RelativePath=".\GSLGaussianGenerator.h"
-				>
-			</File>
-			<File
-				RelativePath=".\LinearCongruentialGenerator.h"
-				>
-			</File>
-			<File
-				RelativePath=".\Lognormal.h"
-				>
-			</File>
-			<File
-				RelativePath=".\MarsagliaGenerator.h"
-				>
-			</File>
-			<File
-				RelativePath=".\MersenneTwisterGenerator.h"
-				>
-			</File>
-			<File
-				RelativePath=".\MersenneTwisterSource.h"
-				>
-			</File>
-			<File
-				RelativePath=".\MonteCarlo.h"
-				>
-			</File>
-			<File
-				RelativePath=".\ParasianCall.h"
-				>
-			</File>
-			<File
-				RelativePath=".\ParasianPut.h"
-				>
-			</File>
-			<File
-				RelativePath=".\ParisianCall.h"
-				>
-			</File>
-			<File
-				RelativePath=".\ParisianPut.h"
-				>
-			</File>
-			<File
-				RelativePath=".\PathIndependantPayoff.h"
-				>
-			</File>
-			<File
-				RelativePath=".\Payoff.h"
-				>
-			</File>
-			<File
-				RelativePath=".\Pipe.h"
-				>
-			</File>
-			<File
-				RelativePath=".\Put.h"
-				>
-			</File>
-			<File
-				RelativePath=".\QuickMonteCarlo.h"
-				>
-			</File>
-			<File
-				RelativePath=".\RandomGenerator.h"
-				>
-			</File>
-			<File
-				RelativePath=".\Range.h"
-				>
-			</File>
-			<File
-				RelativePath=".\Sample.h"
-				>
-			</File>
-			<File
-				RelativePath=".\Tools.h"
-				>
-			</File>
-			<File
-				RelativePath=".\Trajectory.h"
-				>
-			</File>
-			<File
-				RelativePath=".\UniformGenerator.h"
-				>
-			</File>
-			<File
-				RelativePath=".\UnitTests.h"
-				>
-			</File>
-			<File
-				RelativePath=".\V.h"
-				>
-			</File>
-		</Filter>
+		</File>
 	</Files>
 	<Globals>
 	</Globals>

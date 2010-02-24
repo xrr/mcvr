@@ -1,11 +1,15 @@
+#include "Tests.h"
+
 #include "Pipe.h"
-#include "UnitTests.h"
-#include <iostream>
+#include "Call.h"
 
 int main() {
-	{Pipe p("Lognormal.txt");
-	UnitTests::LognormalTest(10,1);}
 
+	Tests::BaseTests();
+	//Tests::RNGTests();
+	Tests::BSTests();
+	Tests::PayoffTests();
+	Tests::MCTests();
 
 	return 0;
 }

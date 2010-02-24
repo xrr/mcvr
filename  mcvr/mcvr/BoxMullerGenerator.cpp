@@ -1,18 +1,21 @@
 #include "BoxMullerGenerator.h"
 #include <math.h>
 
-BoxMullerGenerator::BoxMullerGenerator(void) {
-	_cached = 0;
+BoxMullerGenerator::BoxMullerGenerator(UniformGenerator* pUG)
+: GaussianGenerator(pUG) {
+	Init();
 }
 
-BoxMullerGenerator::BoxMullerGenerator(UniformGenerator* pUG) {
-	_pUG = pUG;
-	BoxMullerGenerator();
+BoxMullerGenerator::BoxMullerGenerator(void) {
+	Init();
+}
+
+void BoxMullerGenerator::Init(void) {
+	_cached = 0;
 }
 
 BoxMullerGenerator::~BoxMullerGenerator(void) {}
 
-//http://en.wikipedia.org/wiki/Box–Muller_transform
 double BoxMullerGenerator::Next(double mu, double sigma) {
 	double const m_pi = 2 * acos(0.0);
 	double N01;
@@ -22,8 +25,8 @@ double BoxMullerGenerator::Next(double mu, double sigma) {
 		u2=_pUG->Next();
 		r = sqrt(-2*log(u1));
 		theta = 2*m_pi*u2;
-		N01 = r*cos(theta); //trigonometric function: relative slow down
-		_cache = r*sin(theta); // ""
+		N01 = r*cos(theta);
+		_cache = r*sin(theta);
 	} else {
 		N01 = _cache;
 	}

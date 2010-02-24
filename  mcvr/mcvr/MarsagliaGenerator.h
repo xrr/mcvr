@@ -7,6 +7,7 @@ class MarsagliaGenerator :
 {
 	bool _cached;
 	double _cache;
+	void Init(void);
 public:
 	MarsagliaGenerator(void);
 	MarsagliaGenerator(UniformGenerator*);

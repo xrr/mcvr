@@ -1,6 +1,7 @@
 #include "LinearCongruentialGenerator.h"
 
-LinearCongruentialGenerator::LinearCongruentialGenerator(long x, long a, long c, long m):
+LinearCongruentialGenerator::LinearCongruentialGenerator(long x, long a,
+														 long c, long m):
 _x(x), _a(a), _c(c), _m(m) {}
 
 LinearCongruentialGenerator::~LinearCongruentialGenerator(void) {}
